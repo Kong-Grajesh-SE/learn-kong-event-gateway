@@ -29,7 +29,7 @@ kcat -b localhost:9192 -L
 
 | Tool | Purpose | Minimum |
 |---|---|---|
-| Kong Konnect | Control plane for Event Gateway | — |
+| Kong Konnect | Control plane for Event Gateway | - |
 | Docker Desktop | Run Event Gateway and Kafka | latest |
 | kcat | Kafka CLI | latest |
 | jq | JSON inspection | 1.6+ |

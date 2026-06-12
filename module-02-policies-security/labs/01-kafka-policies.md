@@ -1,6 +1,6 @@
 # Lab 02 - Policies & Security
 
-> **Story so far.** Kong Event Gateway is deployed and proxying Kafka traffic. Messages flow from clients through the gateway to Kafka brokers. But traffic is wide open — any client can produce to or consume from any topic.
+> **Story so far.** Kong Event Gateway is deployed and proxying Kafka traffic. Messages flow from clients through the gateway to Kafka brokers. But traffic is wide open - any client can produce to or consume from any topic.
 >
 > **Problem.** Without policies, the Event Gateway is just a pass-through proxy. You need ACLs for topic-level access control, authentication to verify client identity, schema validation for data quality, and encryption for sensitive messages.
 >
@@ -99,7 +99,7 @@ curl -s "$KONNECT_API/v2/control-planes/$EG_CP_ID/core-entities/policies?type=ac
 ::: tip ACL policy patterns
 - Use `resource_name: "*"` for wildcard topic matching
 - Use `effect: "deny"` with `principal: "*"` for default-deny, then add specific allows
-- ACL policies are evaluated in priority order — more specific rules override broader ones
+- ACL policies are evaluated in priority order - more specific rules override broader ones
 :::
 
 **✅ Checkpoint.** ACL policies control who can produce to and consume from specific topics.
@@ -147,7 +147,7 @@ curl -s -X POST "$KONNECT_API/v2/control-planes/$EG_CP_ID/core-entities/policies
 
 ## Step 3 - mTLS configuration (10 min)
 
-**What it does:** Configures mutual TLS for encrypted, authenticated connections — both between the gateway and Kafka brokers (backend mTLS) and between clients and the gateway (client mTLS).
+**What it does:** Configures mutual TLS for encrypted, authenticated connections - both between the gateway and Kafka brokers (backend mTLS) and between clients and the gateway (client mTLS).
 
 ### Backend cluster mTLS
 
@@ -223,11 +223,11 @@ curl -s -X POST "$KONNECT_API/v2/control-planes/$EG_CP_ID/core-entities/policies
 ### Test schema validation
 
 ```bash
-# Valid message — should succeed
+# Valid message - should succeed
 echo '{"order_id": "ORD-001", "customer_id": "CUST-001", "amount": 99.99, "currency": "USD"}' | \
   kcat -b localhost:9192 -t orders -P
 
-# Invalid message (missing required field) — should be rejected
+# Invalid message (missing required field) - should be rejected
 echo '{"order_id": "ORD-002", "amount": "not-a-number"}' | \
   kcat -b localhost:9192 -t orders -P
 # Should return an error

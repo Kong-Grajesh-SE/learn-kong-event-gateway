@@ -38,8 +38,8 @@ export KONNECT_API="https://us.api.konghq.com"
 
 | Component | Description |
 |---|---|
-| **Control Plane (CP)** | Managed by Konnect — stores configuration, policies, and routing rules |
-| **Data Plane (DP)** | The Event Gateway proxy — deployed near your Kafka cluster |
+| **Control Plane (CP)** | Managed by Konnect - stores configuration, policies, and routing rules |
+| **Data Plane (DP)** | The Event Gateway proxy - deployed near your Kafka cluster |
 | **Backend Cluster** | Connection to your actual Kafka brokers |
 | **Virtual Cluster** | Logical isolation layer for client groups |
 | **Listener** | Network endpoint where Kafka clients connect |
@@ -53,7 +53,7 @@ Kafka Client → Listener → Virtual Cluster → Policies → Backend Cluster �
 Clients connect to the Event Gateway listener instead of directly to Kafka. The gateway applies policies (ACLs, auth, schema validation) before forwarding traffic to the backend Kafka cluster.
 
 ::: tip Why a Kafka proxy?
-Kong Event Gateway sits in front of Kafka like Kong API Gateway sits in front of REST APIs. It provides authentication, authorization, schema validation, encryption, and observability — without modifying your Kafka brokers or client applications.
+Kong Event Gateway sits in front of Kafka like Kong API Gateway sits in front of REST APIs. It provides authentication, authorization, schema validation, encryption, and observability - without modifying your Kafka brokers or client applications.
 :::
 
 **✅ Checkpoint.** You understand the traffic flow: clients → listener → virtual cluster → policies → backend cluster → Kafka.
@@ -228,7 +228,7 @@ kcat -b localhost:9192 -t test-topic -C -e
 ```
 
 ::: tip Transparent proxying
-Kafka clients connect to the Event Gateway listener (port 9192) using the standard Kafka protocol. No client-side code changes are needed — just change the bootstrap server address.
+Kafka clients connect to the Event Gateway listener (port 9192) using the standard Kafka protocol. No client-side code changes are needed - just change the bootstrap server address.
 :::
 
 **✅ Checkpoint.** Messages flow through the Event Gateway: produce → gateway → Kafka → gateway → consume. The proxy is transparent to Kafka clients.

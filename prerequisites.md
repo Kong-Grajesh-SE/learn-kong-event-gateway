@@ -13,7 +13,7 @@ This bootcamp proxies Kafka traffic through Kong Event Gateway. You need a runni
 
 | Tool | Purpose | Min Version | Install |
 |---|---|---|---|
-| **Kong Konnect** | Control plane for Event Gateway | — | [cloud.konghq.com](https://cloud.konghq.com) |
+| **Kong Konnect** | Control plane for Event Gateway | - | [cloud.konghq.com](https://cloud.konghq.com) |
 | **Docker Desktop** | Run Event Gateway and Kafka | latest | [docker.com](https://www.docker.com/products/docker-desktop/) |
 | **Kafka** | Event streaming backend | 3.x+ | Docker Compose or existing cluster |
 | **kcat** | Kafka CLI (kafkacat) | latest | `brew install kcat` |

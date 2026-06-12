@@ -36,7 +36,7 @@ jq --version
 
 | Tool | Purpose | Minimum |
 |---|---|---|
-| Kong Konnect | Control plane for Event Gateway | — |
+| Kong Konnect | Control plane for Event Gateway | - |
 | Docker Desktop | Run Event Gateway and Kafka | latest |
 | Kafka cluster | Event streaming backend | 3.x+ |
 | kcat | Kafka CLI | latest |

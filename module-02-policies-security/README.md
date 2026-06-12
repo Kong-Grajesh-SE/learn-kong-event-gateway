@@ -1,6 +1,6 @@
 # Module 02 - Policies & Security
 
-> **Scenario.** Kong Event Gateway is deployed and proxying Kafka traffic, but traffic is wide open — any client can produce to or consume from any topic. You need ACLs for topic-level access control, authentication to verify client identity, schema validation for data quality, and encryption for sensitive messages.
+> **Scenario.** Kong Event Gateway is deployed and proxying Kafka traffic, but traffic is wide open - any client can produce to or consume from any topic. You need ACLs for topic-level access control, authentication to verify client identity, schema validation for data quality, and encryption for sensitive messages.
 
 ## Module outcomes
 
@@ -29,7 +29,7 @@ kcat -b localhost:9192 -L
 
 | Tool | Purpose | Minimum |
 |---|---|---|
-| Kong Konnect | Control plane for Event Gateway | — |
+| Kong Konnect | Control plane for Event Gateway | - |
 | Docker Desktop | Run Event Gateway and Kafka | latest |
 | kcat | Kafka CLI | latest |
 | jq | JSON inspection | 1.6+ |

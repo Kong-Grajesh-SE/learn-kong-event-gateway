@@ -6,7 +6,7 @@
 
 > 📡 **Govern, secure, and observe Kafka traffic at scale.**
 
-A hands-on bootcamp for learning Kong Event Gateway — ACLs, OAuth, schema validation, encryption, and data product packaging through a central Kafka proxy.
+A hands-on bootcamp for learning Kong Event Gateway - ACLs, OAuth, schema validation, encryption, and data product packaging through a central Kafka proxy.
 
 ## Overview
 

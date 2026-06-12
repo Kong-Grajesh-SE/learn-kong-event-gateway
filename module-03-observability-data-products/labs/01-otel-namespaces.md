@@ -194,7 +194,7 @@ curl -s -X POST "$KONNECT_API/v2/control-planes/$EG_CP_ID/core-entities/virtual-
 
 ## Step 5 - Protocol mediation: REST to Kafka (5 min)
 
-**What it does:** Enables REST clients to produce and consume Kafka messages via HTTP. Clients don't need a Kafka client library — they use standard HTTP requests.
+**What it does:** Enables REST clients to produce and consume Kafka messages via HTTP. Clients don't need a Kafka client library - they use standard HTTP requests.
 
 ### Configure REST proxy
 

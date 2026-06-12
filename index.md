@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Kong Event Gateway"
   text: "Bootcamp"
-  tagline: "Govern, secure, and observe Kafka traffic at scale — ACLs, OAuth, schema validation, encryption, and data product packaging through a central proxy."
+  tagline: "Govern, secure, and observe Kafka traffic at scale - ACLs, OAuth, schema validation, encryption, and data product packaging through a central proxy."
   image:
     src: /kong-logomark-lime.svg
     alt: Kong Event Gateway
